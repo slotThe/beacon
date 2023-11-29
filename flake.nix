@@ -25,6 +25,7 @@
             src    = ./.;
             filter = path: type:
               (pkgs.lib.hasInfix "/src/" path)
+              || (pkgs.lib.hasInfix "/assets/" path)
               || (crane.lib.${system}.filterCargoSources path type);
           };
         };
