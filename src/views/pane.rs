@@ -5,7 +5,7 @@ use crate::utils::EvalCell;
 use crate::widgets::text_input;
 use crate::{styles::*, INPUT_ID};
 use crate::{Message, SCROLL_ID};
-use iced::alignment::{self, Alignment};
+use iced::alignment::Alignment;
 use iced::widget::{pane_grid, svg};
 use iced::{
     color, theme,
